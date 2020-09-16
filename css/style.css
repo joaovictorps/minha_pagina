@@ -1,0 +1,175 @@
+:root {
+    --primary-bg-color: #FCFAFA;
+    --secondary-bg-color: #2D5D7B;
+    --tertiary-bg-color: #457EAC;
+    --quaternary-bg-color: #686868;
+    --quinary-bg-color: #0478fd;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+body {
+    margin-top: 110px;
+    background-color: var(--primary-bg-color);
+}
+
+.menu { 
+    padding-top: 10px;
+    display: flex;
+    background-color: var(--secondary-bg-color);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    justify-content: space-around;
+}
+
+.menu-itens li,
+.menu-itens a {
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+    font-weight: 900;
+    color: #fff;
+}
+
+.menu-itens ul li a:hover {
+    border-bottom: 1px solid var(--primary-bg-color);
+}
+
+.imagem-perfil img {
+    width: 100px;
+    height: 100px;
+    border: 6px solid var(--quaternary-bg-color);
+    border-radius: 50%;
+}
+
+#informacoes-header {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+#informacoes-header legend {
+    font-family: "Helvetica", sans-serif;
+    font-size: 15px;
+    color: var(--quaternary-bg-color);
+}
+
+#informacoes-header legend span {
+    padding-left: 2px ;
+    color: var(--secondary-bg-color);
+}
+
+.conteudo {
+    padding: 10px 20px;
+}
+
+.conteudo section {
+    padding-bottom: 15px;
+}
+
+#habilidades:hover h1, 
+#sobre-mim:hover h1,
+#social:hover h1 {
+    border-bottom: 2px solid var(--quaternary-bg-color) ;
+}
+
+#habilidades:hover h2 {
+    border-bottom: 1px solid var(--quaternary-bg-color)
+}
+
+.lista-habilidades img { 
+    width: 10px;
+}
+
+#footer {
+    padding: 5px;
+    background-color: var(--quaternary-bg-color);
+    width: 100%;
+    bottom: 0;
+}
+
+#footer .redes {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black
+}
+
+#footer .redes a {
+    padding: 20px;
+}
+
+#footer .redes img {
+    width: 60px;
+}
+
+#footer .informacoes {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 600px ) {
+    body {
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .conteudo {
+        padding: 0px 10px 10px 260px;
+    }
+    .menu {
+        padding: 10px;
+        width: 250px;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .menu-itens a{
+        font-size: 24px;
+    }
+
+    .imagem-perfil img  {
+        width: 200px;
+        height: 200px;
+    }
+
+    #footer {
+        padding-left: 260px;
+    }
+
+}
+
+@media screen and (min-width: 730px) {
+    #footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center
+    }
+
+    #footer .redes {
+        border: none;
+        border-right: 1px solid black;
+        align-self: flex-end;
+    }
+}
+
