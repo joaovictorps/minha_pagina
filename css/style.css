@@ -1,9 +1,9 @@
 :root {
     --primary-bg-color: #FCFAFA;
-    --secondary-bg-color: #2D5D7B;
-    --tertiary-bg-color: #457EAC;
+    --secondary-bg-color: #f95738;
+    --tertiary-bg-color: #ee964b;
     --quaternary-bg-color: #686868;
-    --quinary-bg-color: #0478fd;
+    --quinary-bg-color: #30373f;
 }
 
 *{
@@ -28,6 +28,25 @@ a {
 body {
     margin-top: 110px;
     background-color: var(--primary-bg-color);
+}
+
+p {
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--quaternary-bg-color);
+}
+
+h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: var(--quinary-bg-color);
+}
+
+h2 {
+    color: var(--quinary-bg-color);
+    padding-top: 50px;
 }
 
 .menu { 
@@ -55,7 +74,7 @@ body {
 .imagem-perfil img {
     width: 100px;
     height: 100px;
-    border: 6px solid var(--quaternary-bg-color);
+    border: 6px solid var(--quinary-bg-color);
     border-radius: 50%;
 }
 
@@ -63,6 +82,18 @@ body {
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
+}
+
+#informacoes-header h1 {
+    color: var(--quinary-bg-color);
+    font-family: 'Anton', sans-serif;
+    font-size: 55px;
+}
+
+#informacoes-header h1 span {
+    font-family: 'Anton', sans-serif;
+    font-size: 55px;
+    color: var(--secondary-bg-color);
 }
 
 #informacoes-header legend {
@@ -81,12 +112,12 @@ body {
 }
 
 .conteudo section {
-    padding-bottom: 15px;
+    padding-bottom: 100px;
 }
 
 #habilidades:hover h1, 
 #sobre-mim:hover h1,
-#social:hover h1 {
+#projetos:hover h1 {
     border-bottom: 2px solid var(--quaternary-bg-color) ;
 }
 
@@ -103,11 +134,12 @@ body {
     background-color: var(--quaternary-bg-color);
     width: 100%;
     bottom: 0;
+    color: black;
 }
 
 #footer .redes {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-top: 1px solid black
 }
 
@@ -128,13 +160,30 @@ body {
         margin-top: 100px;
     }
 
+    p {
+        font-size: 19px;
+    }
+
     h1 {
-        font-size: 30px;
+        font-size: 45px;
+    }
+
+    #informacoes-header h1 {
+        font-size: 65px;
+    }
+
+    #informacoes-header h1 span {
+        font-size: 65px;
     }
 
     .conteudo {
-        padding: 0px 10px 10px 260px;
+        padding: 0px 10px 10px 300px;
     }
+
+    .conteudo section {
+        padding-bottom: 150px;
+    }
+
     .menu {
         padding: 10px;
         width: 250px;
@@ -169,7 +218,6 @@ body {
     #footer .redes {
         border: none;
         border-right: 1px solid black;
-        align-self: flex-end;
     }
 }
 
